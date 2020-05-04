@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java</string>
+    <string name="enter_your_name">"ਆਪਣਾ ਨਾਮ ਦਰਜ ਕਰੋ "</string>
+    <string name="topping">ਟੌਪਿੰਗ</string>
+    <string name="choclate">ਚਾਕਲੇਟ</string>
+    <string name="whipped_cream">"ਵ੍ਹਿਪਡ ਕ੍ਰੀਮ "</string>
+    <string name="quantity">"ਮਾਤਰਾ "</string>
+    <string name="create_order_summery_name">ਨਾਮ : :  <xliff:g id="name" example="Dsp">%s</xliff:g> </string>
+    <string name="create_order_summery_quantity">"ਮਾਤਰਾ :  <xliff:g id="quantity" example="2">%d</xliff:g>"</string>
+    <string name="create_order_summery_add_whipped">"ਵ੍ਹਿਪਡ ਕ੍ਰੀਮ : <xliff:g id="Add_Whipped" example="true">%b</xliff:g>  "</string>
+    <string name="create_order_summery_add_chocolate">ਚਾਕਲੇਟ : <xliff:g id="Add_choclate" example="true">%b</xliff:g> </string>
+    <string name="thankYou">"ਤੁਹਾਡਾ ਧੰਨਵਾਦ "</string>
+    <string name="order_Sumary">ਆਰਡਰ ਸੰਖੇਪ</string>
+    <string name="order">ਆਰਡਰ</string>
+    <string name="create_order_summery_total">"ਕੁੱਲ :$ <xliff:g id="total" example="2"> %d</xliff:g>  "</string>
+</resources>

@@ -41,24 +41,16 @@ public class MainActivity extends AppCompatActivity {
         String message = createOrderSummery(name,price,hasWippedCream,hasChocolate);
 
 
-//        Intent intent = new Intent(Intent.ACTION_SEND);
-//        intent.setType("*/*");
-//        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
-//        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
-//        intent.putExtra(Intent.EXTRA_STREAM, attachment);
-//        if (intent.resolveActivity(getPackageManager()) != null) {
-//            startActivity(intent);
-//        }
-
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_SUBJECT,"Just Java App by Devinder");
         intent.putExtra(Intent.EXTRA_TEXT,message);
 
-        if(intent.resolveActivity(getPackageManager()) != null){
-            startActivity(intent);
-        }
-//        displayMessage(message);
+
+//        if(intent.resolveActivity(getPackageManager()) != null){
+//            startActivity(intent);
+//        }
+        displayMessage(message);
     }
 
     private void displayQunatity(int number) {
@@ -108,12 +100,12 @@ public class MainActivity extends AppCompatActivity {
 
     private String createOrderSummery(String name,int price,boolean hasWippedCream,boolean hasChocolate)
     {
-        String priceMessage = "Name : " + name;
-        priceMessage += "\nQuantity : " + numberOfCoffee;
-        priceMessage += "\nAdd Wipped Cream : " + hasWippedCream;
-        priceMessage += "\nAdd Chocolate : " + hasChocolate;
-        priceMessage += "\ntotal : $" + price;
-        priceMessage += "\nThankYou";
+        String priceMessage = getString(R.string.create_order_summery_name,name);
+        priceMessage += "\n" + getString(R.string.create_order_summery_quantity,numberOfCoffee);
+        priceMessage += "\n" + getString(R.string.create_order_summery_add_whipped,hasWippedCream);
+        priceMessage += "\n" + getString(R.string.create_order_summery_add_chocolate,hasChocolate);
+        priceMessage += "\n" + getString(R.string.create_order_summery_total,price);
+        priceMessage += "\n" + getString(R.string.thankYou);
 
         return priceMessage;
     }

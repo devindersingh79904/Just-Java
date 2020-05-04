@@ -1,3 +1,19 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Just Java</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="topping">Topping</string>
+    <string name="choclate">choclate</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="quantity">Quantity</string>
+    <string name="order_Sumary">Order Sumaary</string>
+    <string name="order">Order</string>
+    <string name="create_order_summery_name">Name :  <xliff:g id="name" example="Dsp">%s</xliff:g> </string>
+    <string name="create_order_summery_quantity">Quantity : <xliff:g id="quantity" example="2">%d</xliff:g> </string>
+    <string name="create_order_summery_add_whipped">Add Wipped Cream : <xliff:g id="Add_Whipped" example="true">%b</xliff:g> </string>
+    <string name="create_order_summery_add_chocolate">Add Chocolate : <xliff:g id="Add_choclate" example="true">%b</xliff:g> </string>
+    <string name="create_order_summery_total">Total : $ <xliff:g id="total" example="2"> %d</xliff:g> </string>
+    <string name="thankYou">ThankYou</string>
+    ThankYou
+    total
 </resources>
